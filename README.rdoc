@@ -1,3 +1,18 @@
-= Qqfileuploader
+= QQFileUploader
 
-This project rocks and uses MIT-LICENSE.
+Ported from the PHP code at http://valums.com/ajax-upload/
+
+== Installation
+
+In your Gemfile
+  gem "qqfileuploader"
+
+== Usage
+
+In any action you wish to process a ajax upload, use this helper method
+  handle_upload(upload_dir, replace_file, options...)
+
+It returns the a hash ready to be json-ified and returned back to the client.
+Optional arguments include:
+  :allow_extensions => [array of file extensions]
+  :size_limit => int, max file size (defaults to 10485760 bytes)

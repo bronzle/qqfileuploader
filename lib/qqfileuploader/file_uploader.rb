@@ -11,7 +11,7 @@ module Qqfileuploader
       @options = args.extract_options!
       
       @allowed_extensions = @options[:allow_extensions] || []
-      @size_limit = @options[:size_limit] || 999999
+      @size_limit = @options[:size_limit] || 10485760
 
         #check server settings?
 
