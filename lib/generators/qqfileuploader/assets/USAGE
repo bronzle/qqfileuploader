@@ -1,0 +1,3 @@
+Description:
+  The qqfileuploader:assets generator copies the fileuploader.js and
+  jquery.fileuploader.js to your assets/javascripts/ directory
