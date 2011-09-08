@@ -1,2 +1,5 @@
-module Qqfileuploader
-end
+require "qqfileuploader/version"
+require "qqfileuploader/file_uploader"
+require "qqfileuploader/uploaded_file_form"
+require "qqfileuploader/uploaded_file_xhr"
+require "qqfileuploader/controller_additions"
